@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Une nuit à Whitechapel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="start-screen" class="teaser">
+      <img src="images/Jumpscare.png" alt="Image teaser" />
+      <div class="teaser-text">
+        <h1>Une nuit à Whitechapel</h1>
+        <p>
+          Entrez dans la peau d'un jeune inspecteur, fraîchement arrivé à
+          Londres et à qui est confiée l'affaire dont personne ne veut : un
+          tueur en série multiplie les victimes et la piste, comme les corps,
+          tout est froid. Saurez-vous éviter les pièges et rester sur vos gardes
+          pour stopper ce terrible tueur ? Mais surtout, survivrez-vous à cette
+          première nuit ?
+        </p>
+        <h2>Benoît Corpataux</h2>
+      </div>
+    </div>
+
+    <div id="game" style="display: none">
+      <audio id="bgm" loop src="audio/musique.mp3"></audio>
+
+      <h1 id="scene-title"></h1>
+      <img id="scene-image" alt="illustration" />
+      <p id="scene-text"></p>
+      <div id="choices"></div>
+
+      <div id="flash"></div>
+      <div id="jumpscare">
+        <img src="images/Jumpscare.png" alt="" />
+      </div>
+    </div>
+    <div id="lightnings">
+      <img src="images/eclair1.png" class="eclair" alt="" />
+      <img src="images/eclair2.png" class="eclair" alt="" />
+    </div>
+
+    <script src="scenes.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
